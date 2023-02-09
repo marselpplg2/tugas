@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class bangun_datar{
+            luas(){}
+            keliling(){}
+        }
+        class persegi extends bangun_datar{
+            sisi;
+            luas(){
+                return this.sisi * this.sisi
+            }
+            keliling(){
+                return 4 * this.sisi
+            }
+        }
+        var persegi1 = new persegi
+        persegi1.sisi = 4
+
+        document.write("luas persegi nya : " + persegi1.luas()+ "<br/>")
+        document.write("keliling persegi nya : " + persegi1.keliling() + "<br/>")
+
+        class segitiga extends bangun_datar{
+            alas;
+            tinggi;
+            sisi;
+            luas(){
+                return 0.5 * this.alas * this.tinggi
+            }
+            keliling(){
+                return this.sisi_a * this.sisi_b * this_c
+            }
+        }
+        var segitiga1 = new segitiga()
+        segitiga.alas = 4;
+        segitiga.tinggi = 4;
+        segitiga.sisi_a = 2;
+        segitiga.sisi_a = 4;
+        segitiga.sisi_a = 6;
+    </script>
+</body>
+</html>
