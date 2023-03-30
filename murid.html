@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class murid {
+            nama = "marsel";
+            umur = "15" ;
+            kelas = "10 pplg 2";
+            tgl_lahir = "5 oktober 1997";
+        }
+        class muridrpl extends murid {
+            jurusan = "pplg"
+            lab = "lab pplg"
+
+            ngoding(){
+                return "sedang membuat program"
+            }
+        }
+        var siswa1 = new muridrpl();
+        document.write(siswa1.nama + "<br/>");
+        document.write(siswa1.umur + "<br/>");
+        document.write(siswa1.kelas + "<br/>");
+        document.write(siswa1.tgl_lahir + "<br/>");
+        document.write(siswa1.jurusan + "<br/>");
+        document.write(siswa1.lab + "<br/>");
+        document.write(siswa1.ngoding() + "<br/>");
+    </script>
+</body>
+</html>
